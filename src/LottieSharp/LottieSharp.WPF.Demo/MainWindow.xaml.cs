@@ -19,7 +19,7 @@ namespace LottieSharp.WPF.Demo
 
         private void UIElement_OnPreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            if (NavDrawer.OpenMode is not DrawerHostOpenMode.Standard)
+            if (!(NavDrawer.OpenMode is DrawerHostOpenMode.Standard))
             {
                 //until we had a StaysOpen flag to Drawer, this will help with scroll bars
                 DependencyObject? dependencyObject = Mouse.Captured as DependencyObject;

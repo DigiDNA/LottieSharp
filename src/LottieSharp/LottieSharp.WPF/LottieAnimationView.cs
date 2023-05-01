@@ -14,7 +14,7 @@ namespace LottieSharp.WPF
 {
     public class LottieAnimationView : SKElement
     {
-        private readonly Stopwatch watch = new();
+        private readonly Stopwatch watch = new Stopwatch();
         private Animation animation;
         private DispatcherTimer timer;
         private int loopCount;
@@ -194,7 +194,7 @@ namespace LottieSharp.WPF
 
         private void SetAnimation(Stream stream)
         {
-            using SKManagedStream fileStream = new(stream);
+            using SKManagedStream fileStream = new SKManagedStream(stream);
 
             if (Animation.TryCreate(fileStream, out animation))
             {
