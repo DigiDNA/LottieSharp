@@ -16,6 +16,8 @@
 	  <PackageReadmeFile>readme.md</PackageReadmeFile>
 	  <PackageTags>wpf;lottie;animation;c-sharp</PackageTags>
 	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+	  <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
   </PropertyGroup>
 	
 
